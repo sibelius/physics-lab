@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Physics Quest Lab</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header id="topbar">
+    <a id="brand" href="#">⚛️ <b>Physics</b> Quest Lab</a>
+    <div id="player">
+      <span id="lvl">Lv 1</span>
+      <div id="xpbar"><i id="xpfill"></i></div>
+      <span id="xp">0 XP</span>
+      <span id="stars">⭐ 0</span>
+    </div>
+  </header>
+
+  <main id="hub">
+    <section class="hero">
+      <h1>Learn physics by <em>breaking things</em> (safely).</h1>
+      <p>Pick an experiment, play with the knobs, and complete challenges to earn XP. Every lab shows the real equations behind what you see.</p>
+    </section>
+    <nav id="areas"></nav>
+    <section id="cards"></section>
+  </main>
+
+  <main id="lab" class="hidden">
+    <div id="lab-head">
+      <button id="back">← All labs</button>
+      <h2 id="lab-title"></h2>
+      <span id="lab-area"></span>
+    </div>
+    <div id="lab-body">
+      <div id="stage"></div>
+      <aside id="side">
+        <section class="panel"><h3>Controls</h3><div id="controls"></div></section>
+        <section class="panel"><h3>Measurements</h3><div id="readout"></div></section>
+        <section class="panel"><h3>Challenges</h3><ul id="challenges"></ul></section>
+        <section class="panel theory"><h3>The physics</h3><div id="theory"></div></section>
+      </aside>
+    </div>
+  </main>
+
+  <div id="toast"></div>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
